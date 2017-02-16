@@ -2,6 +2,9 @@ import {Component, OnInit, AfterViewChecked, ElementRef, ViewChild} from '@angul
 import {AF} from "../../providers/af";
 import {FirebaseListObservable} from "angularfire2";
 
+/**
+ * The Home Page Component
+ */
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',

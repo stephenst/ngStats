@@ -26,6 +26,12 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 Run `ng github-pages:deploy` to deploy to Github Pages.
 
+## Documentation
+
+To run documentation; you will need two commands for now; one to start the server, the other to generate the documents.
+
+Run `npm run servecompodoc` to build and start the server.  To rebuild the documentation, in a new terminal window, run `npm run servecompodoc`.  You can view the documentation at: http://127.0.0.1:8080/
+
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
