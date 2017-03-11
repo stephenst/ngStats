@@ -10,7 +10,7 @@ import {Router} from "@angular/router";
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.css'],
 })
 
 export class AppComponent {
@@ -18,6 +18,7 @@ export class AppComponent {
      * Used on template to toggle links/etc.
      */
     public isLoggedIn: boolean;
+    public isCollapsed: false;
 
     constructor(public afService: AF, private router: Router) {
         /**
@@ -37,7 +38,7 @@ export class AppComponent {
                 }
                 /**
                  * When auth is NOT null set the Display Name and Email so we can attribute messages to them.
-                 * 
+                 *
                  * Currently options are just set to google or email.
                  */
                 else {

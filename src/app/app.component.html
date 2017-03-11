@@ -26,31 +26,31 @@
                     UI Elements
                 </li>
                 <li class="nav-item nav-dropdown" routerLinkActive="open">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Components</a>
-                    <ul class="nav-dropdown-items">
+                    <a class="nav-link nav-dropdown-toggle" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="components"><i class="icon-puzzle"></i> Components</a>
+                    <ul id="components" class="nav-dropdown-items" [ngbCollapse]="isCollapsed">
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/buttons']"><i class="icon-puzzle"></i> Buttons</a>
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/patterns/buttons']"><i class="icon-puzzle"></i> Buttons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/social-buttons']"><i class="icon-puzzle"></i> Social Buttons</a>
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/patterns/social-buttons']"><i class="icon-puzzle"></i> Social Buttons</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/cards']"><i class="icon-puzzle"></i> Cards</a>
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/patterns/cards']"><i class="icon-puzzle"></i> Cards</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/forms']"><i class="icon-puzzle"></i> Forms</a>
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/patterns/forms']"><i class="icon-puzzle"></i> Forms</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/modals']"><i class="icon-puzzle"></i> Modals</a>
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/patterns/modals']"><i class="icon-puzzle"></i> Modals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/switches']"><i class="icon-puzzle"></i> Switches</a>
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/patterns/switches']"><i class="icon-puzzle"></i> Switches</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/tables']"><i class="icon-puzzle"></i> Tables</a>
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/patterns/tables']"><i class="icon-puzzle"></i> Tables</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/components/tabs']"><i class="icon-puzzle"></i> Tabs</a>
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="['/patterns/tabs']"><i class="icon-puzzle"></i> Tabs</a>
                         </li>
                     </ul>
                 </li>
